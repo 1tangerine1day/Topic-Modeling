@@ -1,7 +1,5 @@
 # Topic Modeling
 
-[![hackmd-github-sync-badge](https://hackmd.io/EB5NqKdiQvKITSTmuxo7-g/badge)](https://hackmd.io/EB5NqKdiQvKITSTmuxo7-g)
-
 $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
 ## NFM (Non-negative Factor Model):
 * MF (matrix factorization):
