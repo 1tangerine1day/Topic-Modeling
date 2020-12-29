@@ -16,7 +16,7 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
     * $U$ : real or complex unitary matrix (m*m)
     * $S$ :  rectangular diagonal matrix with non-negative real numbers on the diagonal (m*n)
     * $I$ : real or complex unitary matrix (n*n)
-    <br>![](https://i.imgur.com/E4rPrwM.png =50%x)
+    <br><img src="https://i.imgur.com/E4rPrwM.png" width="50%" />
 
 * unitary matrix:
 
@@ -29,14 +29,14 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
     * $\hat{U}$ : initial randamly (m*r)
     * $\hat{S}$ : keep the non zero value of $S$ (r*r)
     * $\hat{I}$ : initial randamly (r*n) 
-    <br>![](https://i.imgur.com/ZMeTv0u.png =70%x)
+    <br><img src="https://i.imgur.com/ZMeTv0u.png" width="70%" />
 
 * LSA(dimension reduction、truncated SVD):
     Sort the singular values in $\hat{S}$ and keep the first $k$ elements
-    <br>![](https://i.imgur.com/jgdiuec.png =70%x)
+    <br><img src="https://i.imgur.com/jgdiuec.png " width="70%" />
     
 * LSA(prediction):
-    <br>![](https://i.imgur.com/c6p8ldV.png =70%x)
+    <br><img src="https://i.imgur.com/c6p8ldV.png" width="70%" />
     
     for topic modeling:
     * Rating matrix -> tf-idf/bag-of-words matrix (corpus * words)
@@ -50,7 +50,7 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
 
 ## LDA(Latent Dirichlet Allocation)
 * Plate Notation
-    <br>![](https://i.imgur.com/PHl0yAB.png =50%x)
+    <br><img src="https://i.imgur.com/PHl0yAB.png" width="70%" />
     * $K$ number of topic
     * $M$ corpus
     * $N$ words
