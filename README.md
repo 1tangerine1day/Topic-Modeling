@@ -16,7 +16,7 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
     * $U$ : real or complex unitary matrix (m*m)
     * $S$ :  rectangular diagonal matrix with non-negative real numbers on the diagonal (m*n)
     * $I$ : real or complex unitary matrix (n*n)
-    ![](https://i.imgur.com/E4rPrwM.png =50%x)
+    ![](https://i.imgur.com/E4rPrwM.png width="50%")
 
 * unitary matrix:
 
