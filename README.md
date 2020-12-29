@@ -16,7 +16,7 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
     * $U$ : real or complex unitary matrix (m*m)
     * $S$ :  rectangular diagonal matrix with non-negative real numbers on the diagonal (m*n)
     * $I$ : real or complex unitary matrix (n*n)
-    ![](https://i.imgur.com/E4rPrwM.png width="50%")
+    <br>![](https://i.imgur.com/E4rPrwM.png =50%x)
 
 * unitary matrix:
 
@@ -28,15 +28,15 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
     
     * $\hat{U}$ : initial randamly (m*r)
     * $\hat{S}$ : keep the non zero value of $S$ (r*r)
-    * $\hat{I}$ : initial randamly (r*n)
-    ![](https://i.imgur.com/ZMeTv0u.png =70%x)
+    * $\hat{I}$ : initial randamly (r*n) 
+    <br>![](https://i.imgur.com/ZMeTv0u.png =70%x)
 
 * LSA(dimension reduction、truncated SVD):
     Sort the singular values in $\hat{S}$ and keep the first $k$ elements
-    ![](https://i.imgur.com/jgdiuec.png =70%x)
+    <br>![](https://i.imgur.com/jgdiuec.png =70%x)
     
 * LSA(prediction):
-    ![](https://i.imgur.com/c6p8ldV.png =70%x)
+    <br>![](https://i.imgur.com/c6p8ldV.png =70%x)
     
     for topic modeling:
     * Rating matrix -> tf-idf/bag-of-words matrix (corpus * words)
@@ -50,7 +50,7 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
 
 ## LDA(Latent Dirichlet Allocation)
 * Plate Notation
-    ![](https://i.imgur.com/PHl0yAB.png =50%x)
+    <br>![](https://i.imgur.com/PHl0yAB.png =50%x)
     * $K$ number of topic
     * $M$ corpus
     * $N$ words
@@ -73,27 +73,28 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
 ## test case
 * NMF
     ```
-    Topic 0 : ['Apple', 'say', 'new', 'company', 'user', 'Google', 'app', 'Amazon', 'EU', 'App']
-    Topic 1 : ['return', 'harm', 'HIV', 'participant', 'australian', 'false', 'trial', 'test', 'positive', 'vaccine']
-    Topic 2 : ['set', 'Apple', 'b', 'year', 'continue', 'despite', 'Brandon', 'federal', 'plea', 'relate']
-    Topic 3 : ['ask', 'Great', 'volunteer', 'Barrier', 'categorise', 'Reef', 'photo', 'thousand', 'Google', 'Friday']
-    Topic 4 : ['old', 'famous', 'instalment', 'final', 'actor', 'role', 'fifth', 'film', 'high', 'app']
+    Topic 0 : ['despite', 'plea', 'Kardashian', 'Kim', 'execution', 'Bernard', 'Indiana', 'Brandon', 'federal', 'EU']
+    Topic 1 : ['Trump', 'president', 'elect', 'run', 'mate', 'finalist', 'Donald', 'beat', 'include', 'safe']
+    Topic 2 : ['阅读全文', 'fall', 'foul', 'billionaire', 'profile', 'controversial', 'law', 'democracy', 'medium', 'figure']
+    Topic 3 : ['home', 'family', 'shoot', 'dead', 'Mr', 'dentist', 'Goodson', 'appointment', 'de', 'say']
+    Topic 4 : ['Apple', 'new', 'year', 'Google', 'event', 'vaccine', 'rise', 'smart', 'find', 'daily']
     ```
 * LSI
     ```
-    Topic 0 : ['return', 'say', 'vaccine', 'Goodson', 'Mr', 'appointment', 'dentist', 'shoot', 'dead', 'family']
-    Topic 1 : ['high', 'White', 'House', 'fatality', 'daily', 'coronavirus', 'hold', 'relate', 'rise', 'record']
-    Topic 2 : ['vaccine', 'Boris', 'Johnson', 'negotiation', 'EU', 'continue', 'Drug', 'adviser', 'Food', 'deem']
-    Topic 3 : ['mate', 'finalist', 'Donald', 'elect', 'Trump', 'beat', 'president', 'run', 'include', 'Boris']
-    Topic 4 : ['Bernard', 'execution', 'Kim', 'Kardashian', 'Indiana', 'Brandon', 'plea', 'federal', 'despite', 'set']
+    Topic 0 : ['return', 'say', 'vaccine', 'appointment', 'Mr', 'Goodson', 'dentist', 'shoot', 'dead', 'family']
+    Topic 1 : ['high', 'White', 'fatality', 'House', 'daily', 'hold', 'coronavirus', 'relate', 'rise', 'record']
+    Topic 2 : ['vaccine', 'Johnson', 'Boris', 'negotiation', 'EU', 'continue', 'Drug', 'deem', 'Food', 'adviser']
+    Topic 3 : ['finalist', 'mate', 'Donald', 'elect', 'Trump', 'beat', 'president', 'run', 'include', 'Boris']
+    Topic 4 : ['Indiana', 'Bernard', 'execution', 'Kim', 'Kardashian', 'Brandon', 'plea', 'federal', 'despite', 'set']
     ```
+    
 * LDA
     ```
-    Topic 0 : ['Apple', 'fifth', 'actor', 'instalment', 'famous', 'final', 'film', 'role', 'old', 'new']
-    Topic 1 : ['Apple', 'plea', 'set', 'despite', 'Kardashian', 'Google', 'Bernard', 'Indiana', 'execution', 'Kim']
-    Topic 2 : ['Google', 'Apple', 'Friday', 'include', 'Black', 'photo', 'Great', 'categorise', 'volunteer', 'Reef']
-    Topic 3 : ['say', 'continue', 'Apple', 'negotiation', 'Johnson', 'Boris', 'EU', 'home', 'deal', 'return']
-    Topic 4 : ['Apple', 'Google', 'vaccine', 'Watch', 'b', 'event', 'high', 'safe', 'fatality', 'House']
+    Topic 0 : ['vaccine', 'Administration', 'deem', 'Drug', 'Food', 'adviser', 'panel', 'safe', 'effective', 'Apple']
+    Topic 1 : ['Apple', 'Google', 'Black', 'deal', 'new', 'Facebook', 'Friday', 'return', 'good', 'app']
+    Topic 2 : ['Apple', 'figure', 'profile', 'billionaire', 'foul', 'democracy', 'law', 'controversial', 'fall', 'medium']
+    Topic 3 : ['Apple', 'continue', 'photo', 'thousand', 'ask', 'categorise', 'Great', 'Barrier', 'volunteer', 'Reef']
+    Topic 4 : ['Apple', 'rise', 'event', 'say', 'Google', 'relate', 'hold', 'fatality', 'White', 'House']
     ```
 
 
@@ -101,3 +102,4 @@ $p(word|corpus) = \sum_{topic}p(word|topic)*p(topic|corpus)$
 * https://medium.com/ai-academy-taiwan/svd-%E5%AF%A6%E4%BD%9C%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1-f90f98b9831b
 * https://blog.rosetta.ai/%E6%B7%B1%E5%85%A5%E6%8E%A2%E8%A8%8E-latent-dirichlet-allocation-lda-%E8%88%87%E5%9C%A8%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8-2441d57ecc8a
 * https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
+* In practice, LSI is much faster to train than LDA, but has lower accuracy. (https://www.quora.com/Whats-the-difference-between-Latent-Semantic-Indexing-LSI-and-Latent-Dirichlet-Allocation-LDA)
